@@ -11,26 +11,29 @@ function App() {
   let name = "Rose";
   return (
     <>
-      <div className="design">
-        <Card style={{ width: "18rem" }}>
-          <Image />
-          <Card.Body>
-            <Card.Title>
-              {" "}
-              <Name />{" "}
-            </Card.Title>
-            <Card.Text>
-              <Description />
-            </Card.Text>
-            <Button variant="primary">
-              <Price />
-            </Button>
-          </Card.Body>
-        </Card>
-      </div>
       <div>
-        <h1>Hello {name ? name : "there"} </h1>
-        {name && <Image />}
+        <div className="design">
+          <Card style={{ width: "18rem", borderRadius: "10px" }}>
+            <Image />
+            <Card.Body id="des">
+              <Card.Title>
+                {" "}
+                <Name />{" "}
+              </Card.Title>
+              <Card.Text>
+                <Description />
+              </Card.Text>
+              <Button variant="primary">
+                <Price />
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <div className="design">
+            <h1>Hello {name ? name : "there"} </h1>
+            {name && <Image />}
+          </div>
+        </div>
       </div>
     </>
   );
