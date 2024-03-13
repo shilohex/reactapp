@@ -1,0 +1,8 @@
+.design {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  /* flex-direction: column; */
+  margin-right: 70px;
+}
