@@ -45,7 +45,7 @@ function App() {
           </Card>
 
           {/* Additional div for demonstration */}
-          <div className="design">
+          <div>
             {/* Conditional rendering of name */}
             <h1>Hello {name ? name : "there"} </h1>
             {/* Conditional rendering of image */}
